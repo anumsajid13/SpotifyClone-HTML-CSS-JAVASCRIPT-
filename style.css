@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(236, 233, 233);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*for changes in Ul inside nav bar */
+nav ul{
+    display: flex; /*Items in nav bar will get horizontal*/
+    list-style-type: none;
+    align-items: center;
+    height: 75px;/*For making the nav bar black*/
+    background-color: black;
+    color: white;
+}
+
+/*for changes in li which is inside nav ul*/
+nav ul li{
+
+    padding: 0 12px; /*tom bottom zero padding, right left 12px padding*/
+
+}
+
+/*For image inside the brand class*/
+.brand img{
+    width: 45px;
+    padding: 0 8px; /*tom bottom zero padding, right left 8px padding*/
+}
+
+.brand{ /*we changes brand to flex 
+    for the image and spotify title to get 
+    horizontal in the nav bar*/
+    display: flex; 
+    align-items: center;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 60vh;
+    background-color: black;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+
+    display:flex;
+    margin: 23px auto;
+    width: 80%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg3.jpg');
+}
+
+.bottom{
+    background-color: black;
+    color:white;
+    position:sticky;
+    height:80px;
+    bottom:0;
+    display: flex; /*Creating bottom as flex box so that all the items get properly alligned inside*/
+    justify-content: center;
+    align-items: center; /*to align the progress bar to center*/
+    flex-direction: column;/*to display flex items in column, ooper neechay*/
+   
+}
+
+.icons{
+
+    margin-top: 10px; /*To create a distance b/w the play icons ND THE SONG range bar*/
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#SongRange{/*Accessing using ID*/
+    width: 80vw;
+    cursor: pointer;
+
+} 
+
+.songcontainer{
+    padding: 30px 0;
+}
+
+.songitem{
+   height: 60px;
+   display: flex;
+   background-color: white;
+  
+   color:black;
+   margin: 12px 0px;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 30px;
+   font-family: 'Oswald', sans-serif;
+
+}
+
+.Songname{
+    margin: 0 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.songitem img{
+
+    width: 60px;
+    height:55px ;
+    margin: 0 15px;
+    border-radius: 40px;
+   
+}
+
+.timespan{
+    padding: 0 50px;
+}
+
+.timespan i{
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/*positioning the gif: */
+.songinfo{
+    position:absolute;
+     left: 10vw;
+     font-family: 'Oswald', sans-serif;
+}
+
+.songinfo img{ 
+    opacity: 0; /*when opacity=0 the gif will get disssapeared 
+                 and when opacity=1, gif will appear again*/
+    transition: opacity 0.5s ease-in;
+}
+

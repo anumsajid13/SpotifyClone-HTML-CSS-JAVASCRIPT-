@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - The Best Experience is Awaiting You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> <!--For Navigation Bar-->
+        <ul>
+            <li id=" "class="brand"><img src="logo.png">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+
+        </ul>
+    </nav>
+
+    <div id=" "class="container"> <!--For Main Content-->
+       
+        <div id=" "class="SongsList"><!--A seperate division for song List-->
+            <h1>Favourites</h1>
+            <div id=" "class="songcontainer">
+                <div id=" "class="songitem">
+                    
+                 <img alt="Image cannot be displayed" >
+                 <span id="song"class="Songname"></span>
+                 <span class="songlistplay"><span class="timespan">05:23<i id="0"class=" far songitemplay fa-sharp fa-regular fa-circle-play"></i></span> </span>
+                </div>
+
+                 <div id=" "class="songitem">
+                    
+                    <img  alt="Image cannot be displayed" >
+                    <span id="song"class="Songname"></span>
+                    <span  class="songlistplay"><span class="timespan">05:23<i id="1"class=" far songitemplay fa-sharp fa-regular fa-circle-play"></i></span> </span>
+                    </div>
+
+                 <div id=" "class="songitem">
+                    
+                        <img  alt="Image cannot be displayed" >
+                        <span id="song"class="Songname"></span>
+                        <span class="songlistplay"><span class="timespan">05:23<i id="2"class=" far songitemplay fa-sharp fa-regular fa-circle-play"></i></span> </span>
+                  </div>
+                  <div id=" "class="songitem">
+                    
+                    <img  alt="Image cannot be displayed" >
+                    <span id="song"class="Songname"></span>
+                    <span class="songlistplay"><span class="timespan">05:23<i id="3"class=" far songitemplay fa-sharp fa-regular fa-circle-play"></i></span> </span>
+                   </div>
+
+                   <div id=""class="songitem">
+                    
+                    <img  alt="Image cannot be displayed" >
+                    <span id="song"class="Songname"></span>
+                    <span class="songlistplay"><span class="timespan">05:23<i id="4"class=" far songitemplay fa-sharp fa-regular fa-circle-play"></i></span> </span>
+                    </div>
+            </div>
+        </div>
+
+         <div id=" "class="Song Banner"><!--A seperate division for song Banner-->
+
+         </div>
+    </div>
+
+    <div id=" "class="bottom"><!--A seperate division for the bottom play options-->
+        <!--Using Input tag to create a slider for songs progress: -->
+         <input type="range" name="SongRange" id="SongRange" min="0" max="100" value="0">
+
+         <div id=" "class="icons"> <!-- To add icons in this div with the slider -->          
+            <!--Icon tags: -->
+            <i class="fa-solid fa-2x fa-backward-step" id="previous"></i> 
+            <i class="fa-sharp fa-2x fa-regular fa-circle-play" id="playid"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="foreward"></i>         
+         </div>
+         <div id=" "class="songinfo">
+            <img src="playing.gif" width="42px" id="gif"><span id="SongName">Song 1-No Copy Right</span>
+         </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/89beb80438.js" crossorigin="anonymous"></script>   
+</body>
+</html>
